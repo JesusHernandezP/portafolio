@@ -90,6 +90,22 @@ p {
   line-height: 1.6;
 }
 
+span {
+font-size: 1.5rem;
+color: #b9b912;
+margin-bottom: 2rem;
+}
+
+h2.bienvenida {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #f3f3f3;
+}
+.hero-image-content p {
+  font-size: 1.5rem;
+  color: #f3f3f3;
+}
+
 /* ********** Components ********** */
 
 /* ********** Carousel ********** */
@@ -635,6 +651,7 @@ progress::-moz-progress-bar {
 
 .portfolio-details b {
   color: var(--first-color);
+ 
 }
 
 .knowledge-card {
