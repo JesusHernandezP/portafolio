@@ -269,6 +269,8 @@ p {
   background-size: cover;
   width: 100%;
   background-attachment: var(--hero-attachment);
+ 
+
   
   
 }
@@ -331,7 +333,7 @@ p {
   .menu-btn {
     display: none;
   }
-
+  
   .menu {
     position: static;
     width: auto;
@@ -500,7 +502,7 @@ progress::-moz-progress-bar {
     width: 100%;
     min-height: 100vh;
   }
-
+  
   .text-lg-center {
     text-align: center;
   }
@@ -508,7 +510,7 @@ progress::-moz-progress-bar {
   .text-lg-left {
     text-align: left;
   }
-
+  
   .text-lg-right {
     text-align: right;
   }
@@ -586,7 +588,7 @@ progress::-moz-progress-bar {
   height: 100%;
   object-fit: cover;
   border: thin solid var(--first-color);
-  filter: blur(.1rem);
+
 
   
   
@@ -758,13 +760,14 @@ progress::-moz-progress-bar {
 
 
 .circle{
- /* background-image: url(assets/hello-world2.jpg); */
+  /* background-image: url(assets/hello-world2.jpg); */
   background-color: var(--second-color) ;
   /* opacity: 90%; */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   
   
 }
@@ -849,7 +852,6 @@ progress::-moz-progress-bar {
   animation-timing-function: linear;
   display: inline-block;
   border: #b9b912;
-
 }
 
 @keyframes girarb{
@@ -870,8 +872,8 @@ progress::-moz-progress-bar {
   border-radius: 50%;
   top: 10px;
   left: 35%;
-
-
+  
+  
 }
 
 .card-circle:hover .face2 img{
@@ -880,8 +882,8 @@ progress::-moz-progress-bar {
   border-radius: 50%;
   object-fit: cover;
   object-position: 10% 0%;
-
-
+  
+  
 }
 
 a:hover{
@@ -899,3 +901,40 @@ a:hover{
 
 
 
+
+.wpContent{
+  display: flex;
+  margin-bottom: 20%;
+  /* margin-right:  0; */
+  text-align: center;
+  justify-content: center;
+}
+
+.typingEffect{
+  width: 30ch;
+  animation: typing 2s
+    steps(30), blink 1s
+    step-end infinite
+    alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1rem;
+  color: var(--white-color);
+
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+
+.spanEffect{
+  font-size: 1.5rem ;
+}

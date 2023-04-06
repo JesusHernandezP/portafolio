@@ -55,6 +55,3 @@
     });
   })(document);
 
-  // carusel portafolio
-
-  
