@@ -753,9 +753,9 @@ progress::-moz-progress-bar {
 
 
 .circle{
- background-image: url(assets/hello-world2.jpg);
-  /* background-color: var(--black-alpha-color); */
-  opacity: 90%;
+ /* background-image: url(assets/hello-world2.jpg); */
+  background-color: var(--second-color) ;
+  /* opacity: 90%; */
   height: 100vh;
   display: flex;
   justify-content: center;
