@@ -578,6 +578,7 @@ progress::-moz-progress-bar {
   width: 100%;
   margin: 0 auto;
   display: block;
+  
 }
 
 .portfolio-card img {
@@ -585,6 +586,10 @@ progress::-moz-progress-bar {
   height: 100%;
   object-fit: cover;
   border: thin solid var(--first-color);
+  filter: blur(.1rem);
+
+  
+  
 }
 
 .portfolio-card-info {
@@ -760,6 +765,7 @@ progress::-moz-progress-bar {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   
 }
 
