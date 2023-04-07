@@ -760,8 +760,8 @@ progress::-moz-progress-bar {
 
 
 .circle{
-  /* background-image: url(assets/hello-world2.jpg); */
-  background-color: var(--second-color) ;
+  /* background-image: url(assets/videofondo.mp4); */
+  /* background-color: var(--second-color) ; */
   /* opacity: 90%; */
   height: 100vh;
   display: flex;
@@ -781,7 +781,7 @@ progress::-moz-progress-bar {
   height: 350px;
   width: 350px;
   border-radius: 200px;
-  transition: 0.5s;
+  transition: 0.2s;
   
   
 }
@@ -803,7 +803,7 @@ progress::-moz-progress-bar {
 .face1{
   text-align: center;
   padding: 2px;
-  transition: 0.5s;
+  transition: 0.2s;
   border-radius: 200px;
   
 }
@@ -829,29 +829,29 @@ progress::-moz-progress-bar {
   text-decoration: none;
   color: var(--white-color);
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.2s;
   border-radius: 0.5rem;
   background-color: var(--first-color);
   
 }
 
 .face2{
-  background-color: var(--first-color) ;
-  transition: 0.5s;
+  /* background-color: var(--first-color) ; */
+  transition: 0.2s;
   
 }
 
 .face2 img{
   height: 350px;
   width: 350px;
-  transition: 0.5s;
+  transition: 0.2s;
   border-radius: 50%;
   animation-name:girarb ;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   display: inline-block;
-  border: #b9b912;
+  /* border: #b9b912; */
 }
 
 @keyframes girarb{
@@ -868,7 +868,7 @@ progress::-moz-progress-bar {
 .card-circle:hover .face2{
   width: 100px;
   height: 100px;
-  transition: 0.5s;
+  transition: 0.2s;
   border-radius: 50%;
   top: 10px;
   left: 35%;
