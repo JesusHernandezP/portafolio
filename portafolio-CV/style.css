@@ -3,7 +3,7 @@
   --first-color: #b9b912;
   --first-alpha-color: rgba(33, 32, 32, 0.255);
   --second-color: #1f1f20;
-  --second-alpha-color: rgba(28, 28, 29, 0.75);
+  --second-alpha-color: rgba(28, 28, 29, 0.749);
   --third-color: #b9b912;
   --third-alpha-color: rgb(185, 185, 18);
   --white-color: #fff;
@@ -758,7 +758,7 @@ progress::-moz-progress-bar {
   /* text-decoration: none; */
 }
 
-
+/* ----------- circulo effecto--------- */
 .circle{
   /* background-image: url(assets/videofondo.mp4); */
   /* background-color: var(--second-color) ; */
@@ -851,6 +851,7 @@ progress::-moz-progress-bar {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   display: inline-block;
+  margin-top: 0;
   /* border: #b9b912; */
 }
 
@@ -900,14 +901,15 @@ a:hover{
 }
 
 
-
+/*-------------- texto efecto-------- */
 
 .wpContent{
   display: flex;
   margin-bottom: 20%;
-  /* margin-right:  0; */
   text-align: center;
   justify-content: center;
+  margin-bottom: 30px;
+
 }
 
 .typingEffect{
@@ -918,9 +920,14 @@ a:hover{
     alternate;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1rem;
-  color: var(--white-color);
+  font-size: 1.2rem;
+  color: var(--black-color);
+  font-weight: bold;
 
+}
+
+.typingEffect i{
+  color: #b9b912;
 }
 
 @keyframes typing {
@@ -937,4 +944,14 @@ a:hover{
 
 .spanEffect{
   font-size: 1.5rem ;
+}
+
+/* -------------particula en movimiento---------- */
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+ 
 }
