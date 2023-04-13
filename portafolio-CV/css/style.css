@@ -1,8 +1,8 @@
 /* ********** Custom Properties ********** */
 :root {
   --first-color: #b9b912;
-  --first-alpha-color: rgba(33, 32, 32, 0.255);
-  --second-color: #1f1f20;
+  --first-alpha-color: #373751;
+  --second-color: #373751;
   --second-alpha-color: rgba(28, 28, 29, 0.749);
   --third-color: #b9b912;
   --third-alpha-color: rgb(185, 185, 18);
@@ -119,7 +119,7 @@ p {
   max-width: 800px;
   width: 100vw;
   overflow-x: hidden;
-  background-color: var(--carousel-bg-color);
+  background-color: #ccc;
 }
 
 .carousel .slides {
@@ -830,7 +830,7 @@ progress::-moz-progress-bar {
   color: var(--white-color);
   font-weight: bold;
   transition: 0.2s;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   background-color: var(--first-color);
   
 }
@@ -921,7 +921,7 @@ a:hover{
   white-space: nowrap;
   overflow: hidden;
   font-size: 1.2rem;
-  color: var(--black-color);
+  color: #ccc;
   font-weight: bold;
 
 }
@@ -948,10 +948,11 @@ a:hover{
 
 /* -------------particula en movimiento---------- */
 
-#particles-js {
+/* #particles-js {
   height: 100vh;
   width: 100%;
-  position: fixed;
-  z-index: -1;
+  position:fixed;
+  z-index: 0;
  
-}
+} */
+
