@@ -1,8 +1,8 @@
 /* ********** Custom Properties ********** */
 :root {
   --first-color: #b9b912;
-  --first-alpha-color: #373751;
-  --second-color: #373751;
+  --first-alpha-color: rgb(55, 55, 81);
+  --second-color: rgb(55, 55, 81);
   --second-alpha-color: rgba(28, 28, 29, 0.749);
   --third-color: #b9b912;
   --third-alpha-color: rgb(185, 185, 18);
@@ -267,12 +267,8 @@ p {
   background-image: var(--hero-image);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  background-position: center;
   background-attachment: var(--hero-attachment);
- 
-
-  
-  
 }
 
 .hero-image-opacity {
@@ -587,11 +583,7 @@ progress::-moz-progress-bar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: thin solid var(--first-color);
-
-
-  
-  
+  border: thin solid var(--first-color);  
 }
 
 .portfolio-card-info {
@@ -709,6 +701,7 @@ progress::-moz-progress-bar {
     grid-column: span 2;
   }
 
+ 
   
 }
 
@@ -719,7 +712,7 @@ progress::-moz-progress-bar {
     justify-content: space-between;
     align-content: center;
   }
-
+  
   .contact-cards {
     grid-template-columns: repeat(4, 24%);
   }
@@ -759,17 +752,11 @@ progress::-moz-progress-bar {
 }
 
 /* ----------- circulo effecto--------- */
-.circle{
-  /* background-image: url(assets/videofondo.mp4); */
-  /* background-color: var(--second-color) ; */
-  /* opacity: 90%; */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  
-  
+.circle{ 
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;  
 }
 
 .container-circle{
@@ -782,8 +769,7 @@ progress::-moz-progress-bar {
   width: 350px;
   border-radius: 200px;
   transition: 0.2s;
-  
-  
+    
 }
 .face{
   position: absolute;
@@ -846,13 +832,13 @@ progress::-moz-progress-bar {
   width: 350px;
   transition: 0.2s;
   border-radius: 50%;
-  animation-name:girarb ;
+  animation-name: girarb ;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   display: inline-block;
   margin-top: 0;
-  /* border: #b9b912; */
+  
 }
 
 @keyframes girarb{
@@ -956,3 +942,66 @@ a:hover{
  
 } */
 
+/* --------------Cambio de idioma--------------------- */
+
+.en{
+  color: #b9b912;
+  font-size: 0.8rem;
+  font-weight: bold;
+  top: 0;
+
+  
+  
+}
+
+.es{
+  color: #b9b912;
+  font-size: 0.8rem;
+  font-weight: bold;
+  top: 0; 
+  
+  
+}
+
+.check{
+  width: 50px;
+  position: relative;
+  
+  
+}
+
+
+
+.check:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #333;
+  border-radius: 25px;
+  
+}
+
+.check:after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  
+}
+
+.check:checked:after{
+  left: 25px;
+  border: 2px solid #b9b912;
+  
+}
+
+.check:checked:before{
+  background:#b9b912;
+  
+}
