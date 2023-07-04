@@ -261,25 +261,7 @@ p {
     margin-left: 0;
   }
 }
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  right: 20px;
-  z-index: 1;
-  font-size: 18px;
-  border: thin solid #b9b912 ;
-  outline: none;
-  background-color:transparent;
-  color: #b9b912;
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 4px;
-  scroll-behavior: smooth;
-}
 
-#scrollToTopBtn:hover {
-  background-color: #333;
-}
 
 /* ********** HeroImage ********** */
 .hero-image {
@@ -323,6 +305,7 @@ p {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
+  z-index: 999;
 }
 
 .menu.is-active {
@@ -479,7 +462,7 @@ progress::-moz-progress-bar {
 }
 
 .section {
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 
 .section-title {
@@ -559,7 +542,7 @@ progress::-moz-progress-bar {
   padding: 1rem;
   text-align: center;
   color: var(--first-color);
-  background-color: var(--second-color);
+  background-image: url(../assets/imagenfondo.webp);
 }
 
 .header {
@@ -685,25 +668,7 @@ progress::-moz-progress-bar {
 
 @media screen and (min-width: 768px) {
 
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    right: 20px;
-    z-index: 1;
-    font-size: 18px;
-    border: thin solid #b9b912 ;
-    outline: none;
-    background-color:transparent;
-    color: #b9b912;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 4px;
-    scroll-behavior: smooth;
-  }
   
-  #scrollToTopBtn:hover {
-    background-color: #333;
-  }
 
   .contact-cards {
     display: grid;
@@ -742,26 +707,6 @@ progress::-moz-progress-bar {
     grid-column: span 2;
   }
 
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    z-index: 1;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color:#b9b912;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 4px;
-    scroll-behavior: smooth;
-  }
-  
-  #scrollToTopBtn:hover {
-    background-color: #333;
-  }
 
 
   
@@ -968,6 +913,7 @@ h2 i{
 }
 
 @media (max-width: 768px) {
+  
   .left-container
    {
     width: 100%;
@@ -1090,6 +1036,7 @@ h2 i{
 #scrollToTopBtn {
   display: none;
   position: fixed;
+  bottom: 20px;
   right: 20px;
   z-index: 1;
   font-size: 18px;
@@ -1105,14 +1052,6 @@ h2 i{
 
 #scrollToTopBtn:hover {
   background-color: #333;
-}
-@media screen and (min-width: 380px) {
-  #scrollToTopBtn {
-    display: block;
-    bottom: 80px;
-    right: 20px;
-
-  }
 }
 
 .line-transition {
