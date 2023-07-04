@@ -42,6 +42,7 @@
 </head>
 
 <body>
+  <div class="line-transition"></div>
   <header class="header">
     <section class="container">
       <div class="logo">
@@ -58,41 +59,41 @@
             d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
         </svg>
       </button>
-      <nav class="menu">
-        <a href="#inicio">Home</a>
-        <a href="#portafolio">Projects</a>
-        <a href="#conocimientos">Knowledge</a>
-        <a href="#acerca">About</a>
-        <a href="#testimonios">References</a>
-        <a href="#contacto">Contact</a>
-      </nav>
     </section>
   </header>
-  <section id="inicio" class="home">
-    <aside class="hero-image-opacity" style="--hero-opacity-color: var(--first-alpha-color);">
-      <div class="hero-image-content">
-        <div class="wpContent">
-          <div class="typingEffect">
-            <span class="spanEffect">JESUS HERNANDEZ</span> <br> <i>FrontEnd</i> Developer
-          </div>
+  <main class="hero-content">
+    <section id="inicio" class="home">
+      <div class="left-container">
+        <div class="hero-text">
+          <h1>Jesus Hernandez</h1> 
+            <h2><i>FrontEnd</i> developer</h2>
+          <p class="welcome">WELCOME</p>
+          <p class="welcome-text">
+            Hello! I am a web developer capable of creating creative solutions. I have a set of skills and competencies
+            that make me the ideal candidate, such as teamwork, tolerance, and creating user-centric solutions. In every
+            project I am involved in, I make sure to pay attention to every detail, striving for excellence. I am
+            motivated by this new transition in my professional career and to continue learning constantly to adapt to
+            new technological challenges. Thanks to the support and endorsement of organizations that believed in me and
+            gave me the opportunity to educate myself alongside professionals, I have acquired different technical
+            knowledge and skills to venture into this new job field successfully.</p>
         </div>
-        <div class="container-circle">
-          <div class="card-circle">
-            <div class="face face1">
-              <h2>WELCOME</h2>
-              <p>I am Jesus Hernandez, a <i>FrontEnd</i> development and a technology enthusiast. In this portfolio, you
-                can find more information about me and my projects</p>
-              <a href="#portafolio">PROJECTS</a>
-            </div>
-            <div class="face face2">
-              <img src="../assets/fondo3.png" />
-            </div>
-          </div>
+        <div class="text-center text-lg-center">
+          <a class="btn" href="../assets/JesusHernandezCV-EN.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
-    </aside>
-  </section>
-  </article>
-  </section>
+      </div>
+      <div class="right-container">
+        <nav class="menu">
+          <a href="#portafolio">Projects</a>
+          <a href="#conocimientos">Knowledge</a>
+          <a href="#contacto">Contact</a>
+          <a href="#testimonios">References</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollToTopBtn" title="Go to top">&#8593;</button>
+  
   <section id="portafolio" class="portfolio section">
     <div class="container">
       <h2 class="section-title">Projects</h2>
@@ -445,134 +446,6 @@
 
   </section>
 
-  <section id="acerca" class="about section container full-lg-screen">
-    <article class="text-lg-center">
-      <aside class="text-center text-lg-center">
-        <h1>Jesus Hernandez</h1>
-        <h5>Student of FrontEnd development</h5>
-      </aside>
-      <p>Hello! I am a web developer capable of creating creative solutions. I have a set of skills and competencies
-        that make me the ideal candidate, such as teamwork, tolerance, and creating user-centric solutions. In every
-        project I am involved in, I make sure to pay attention to every detail, striving for excellence. I am motivated
-        by this new transition in my professional career and to continue learning constantly to adapt to new
-        technological challenges. Thanks to the support and endorsement of organizations that believed in me and gave me
-        the opportunity to educate myself alongside professionals, I have acquired different technical knowledge and
-        skills to venture into this new job field successfully.
-      </p>
-      <div class="text-center text-lg-center">
-        <a class="btn" href="../assets/JesusHernandezCV-EN.pdf" target="_blank" rel="noopener">Download CV</a>
-      </div>
-    </article>
-    <article>
-      <img class="gray-scale" src="../assets/perfil_cv_filtro.jpg" alt="JesusHernandez">
-    </article>
-    <article>
-      <h2 class="text-center text-lg-left">Skills</h2>
-      <div class="progress">
-        <p>
-          <b>HTML</b>
-          <b>80%</b>
-        </p>
-        <progress value="80" min="0" max="100"></progress>
-      </div>
-      <div class="progress">
-        <p>
-          <b>CSS</b>
-          <b>70%</b>
-        </p>
-        <progress value="70" min="0" max="100"></progress>
-      </div>
-      <div class="progress">
-        <p>
-          <b>UX | UI</b>
-          <b>70%</b>
-        </p>
-        <progress value="70" min="0" max="100"></progress>
-      </div>
-      <div class="progress">
-        <p>
-          <b>FIGMA</b>
-          <b>70%</b>
-        </p>
-        <progress value="70" min="0" max="100"></progress>
-      </div>
-      <div class="progress">
-        <p>
-          <b>JAVASCRIPT</b>
-          <b>60%</b>
-        </p>
-        <progress value="60" min="0" max="100"></progress>
-      </div>
-      <div class="progress">
-        <p>
-          <b>REACT</b>
-          <b>50%</b>
-        </p>
-        <progress value="60" min="0" max="100"></progress>
-      </div>
-    </article>
-  </section>
-
-  <section id="testimonios" class="testimonials">
-    <article class="hero-image" style="--hero-image: url('../assets/customer-2.jpg'); --hero-attachment: scroll;">
-      <aside class="hero-image-opacity" style="--hero-opacity-color: var(--gray-light-color);">
-        <div class="hero-image-content">
-          <div class="container">
-            <h2 class="section-title">References</h2>
-            <article class="carousel" style="--carousel-bg-color: var(--first-alpha-color);">
-              <input type="radio" name="slides" id="slide-1" checked>
-              <input type="radio" name="slides" id="slide-2">
-              <input type="radio" name="slides" id="slide-3">
-              <input type="radio" name="slides" id="slide-4">
-              <ul class="slides">
-                <li class="slide">
-                  <a href="https://www.linkedin.com/in/andressaavedra/"><img class="avatar" src="../assets/andres.jfif"
-                      alt="referencia 1" /> </a>
-                  <blockquote>My experience as a tutor of Jesus Hernandez, I have had the pleasure of working with a
-                    dedicated, curious, and passionate student. He always shows a proactive attitude and continuous
-                    learning.</blockquote>
-                  <h3 class="text-first-color">Andrés Saavedra</h3>
-                </li>
-                <li class="slide">
-                  <a href="https://www.linkedin.com/in/bymarielisa/"><img class="avatar" src="../assets/marie.jfif"
-                      alt="referencia 4" /> </a>
-                  <blockquote>Jesus is an invaluable asset to any team, not only for his knowledge and eagerness to
-                    learn new things, but also for his generosity and camaraderie. He is always willing to help those
-                    around him.</blockquote>
-                  <h3 class="text-first-color">Marielisa González</h3>
-
-                </li>
-                <li class="slide">
-                  <a href="https://www.linkedin.com/in/edison-cadenas/"><img class="avatar" src="../assets/edison.jfif"
-                      alt="referencia 3" /> </a>
-                  <blockquote>Jesus Always willing to help, as well as being a loyal and honest person at all times.
-                    Additionally, has a great sense of humor that makes them reliable and friendly. He are someone you
-                    can count on in any situation</blockquote>
-                  <h3 class="text-first-color">Edison Cadenas</h3>
-
-                </li>
-                <li class="slide">
-                  <a href="https://www.linkedin.com/in/carloscosta-/"><img class="avatar" src="../assets/carlos.jfif"
-                      alt="referencia 2" /> </a>
-                  <blockquote>I met Jesus during the Powercoders bootcamp and can say that he is a reliable, hardworking
-                    and committed person. He always demonstrates a positive and proactive attitude in his work.
-                  </blockquote>
-                  <h3 class="text-first-color">Carlos Costa</h3>
-
-                </li>
-              </ul>
-              <aside class="slides-nav">
-                <label for="slide-1" id="dot-1"></label>
-                <label for="slide-2" id="dot-2"></label>
-                <label for="slide-3" id="dot-3"></label>
-                <label for="slide-4" id="dot-4"></label>
-              </aside>
-            </article>
-          </div>
-        </div>
-      </aside>
-    </article>
-  </section>
   <section id="contacto" class="contact section">
     <div class="container">
       <h2 class="section-title">Contact</h2>
@@ -656,6 +529,68 @@
       </article>
     </div>
   </section>
+
+  <section id="testimonios" class="testimonials">
+    <article class="hero-image" style="--hero-image: url('../assets/customer-2.jpg'); --hero-attachment: scroll;">
+      <aside class="hero-image-opacity" style="--hero-opacity-color: var(--gray-light-color);">
+        <div class="hero-image-content">
+          <div class="container">
+            <h2 class="section-title">References</h2>
+            <article class="carousel" style="--carousel-bg-color: var(--first-alpha-color);">
+              <input type="radio" name="slides" id="slide-1" checked>
+              <input type="radio" name="slides" id="slide-2">
+              <input type="radio" name="slides" id="slide-3">
+              <input type="radio" name="slides" id="slide-4">
+              <ul class="slides">
+                <li class="slide">
+                  <a href="https://www.linkedin.com/in/andressaavedra/"><img class="avatar" src="../assets/andres.jfif"
+                      alt="referencia 1" /> </a>
+                  <blockquote>My experience as a tutor of Jesus Hernandez, I have had the pleasure of working with a
+                    dedicated, curious, and passionate student. He always shows a proactive attitude and continuous
+                    learning.</blockquote>
+                  <h3 class="text-first-color">Andrés Saavedra</h3>
+                </li>
+                <li class="slide">
+                  <a href="https://www.linkedin.com/in/bymarielisa/"><img class="avatar" src="../assets/marie.jfif"
+                      alt="referencia 4" /> </a>
+                  <blockquote>Jesus is an invaluable asset to any team, not only for his knowledge and eagerness to
+                    learn new things, but also for his generosity and camaraderie. He is always willing to help those
+                    around him.</blockquote>
+                  <h3 class="text-first-color">Marielisa González</h3>
+
+                </li>
+                <li class="slide">
+                  <a href="https://www.linkedin.com/in/edison-cadenas/"><img class="avatar" src="../assets/edison.jfif"
+                      alt="referencia 3" /> </a>
+                  <blockquote>Jesus Always willing to help, as well as being a loyal and honest person at all times.
+                    Additionally, has a great sense of humor that makes them reliable and friendly. He are someone you
+                    can count on in any situation</blockquote>
+                  <h3 class="text-first-color">Edison Cadenas</h3>
+
+                </li>
+                <li class="slide">
+                  <a href="https://www.linkedin.com/in/carloscosta-/"><img class="avatar" src="../assets/carlos.jfif"
+                      alt="referencia 2" /> </a>
+                  <blockquote>I met Jesus during the Powercoders bootcamp and can say that he is a reliable, hardworking
+                    and committed person. He always demonstrates a positive and proactive attitude in his work.
+                  </blockquote>
+                  <h3 class="text-first-color">Carlos Costa</h3>
+
+                </li>
+              </ul>
+              <aside class="slides-nav">
+                <label for="slide-1" id="dot-1"></label>
+                <label for="slide-2" id="dot-2"></label>
+                <label for="slide-3" id="dot-3"></label>
+                <label for="slide-4" id="dot-4"></label>
+              </aside>
+            </article>
+          </div>
+        </div>
+      </aside>
+    </article>
+  </section>
+  
   <footer class="footer">
     <small>©️ By <a class="link-footer" href="https://www.linkedin.com/in/jesus-hernandez-479359127/" target="_blank"
         rel="noopener">JESUS HERNANDEZ</a></small>
